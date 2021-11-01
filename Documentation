@@ -41,3 +41,6 @@ function Path:Jump()
 
 function Path:SetSettings(Data, Type)
 --@ Changes path settings. Type parameter can be "TweenInfo", "WalkSpeed", or "JumpPower". Data contains the desired value that the setting will be changed to.
+
+function Path:ManualReset()
+--@ Updates current path in case of any blocked paths.
