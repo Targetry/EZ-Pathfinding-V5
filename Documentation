@@ -1,0 +1,43 @@
+# Documentation
+
+function Path.new(Target, Endpoint)
+--@ Takes in two parameters - Target and Endpoint. Target is the agent that you are wanting to use. Endpoint is the destination; can take in a Vector3, Instance, or an Array.
+
+function Path:Play()
+--@ Sets the agent in motion based on path data. Endpoint data must be a Vector3 or Instance.
+
+function Path:ArrayMovement()
+--@ Sets the agent in motion going from one endpoint to the next in order based on endpoint data. Endpoint parameter must be an Array.
+
+function Path:Pause()
+--@ Pauses the current path until resumed.
+
+function Path:Resume()
+--@ Resumes the current path.
+
+function Path:Destroy()
+--@ Destroys all path data and immediately pauses it. Cannot be resumed.
+
+function Path:CalculateTime()
+--@ Calculates time based on path data. Only works on rig entries.
+
+function Path.CalculateTimeRaw(Target, End)
+--@ Calculates time based on inputed data. Only works on rig entries. Takes in two parameters. Target is the desired agent and End is the destination.
+
+function Path:IncreaseIndex()
+--@ Increases the current waypoint index (essentially skipping the current waypoint).
+
+function Path:DecreaseIndex()
+--@ Decreases the current waypoint index.
+
+function Path:ResetIndex()
+--@ Resets path waypoint index entirely.
+
+function Path:CheckFor(name, callback)
+--@ Adds new function that will be called on specific occasions. Name parameter must be a string variable containing "Finished" or "WaypointReached".
+
+function Path:Jump()
+--@ Simulates a "jumping" action.
+
+function Path:SetSettings(Data, Type)
+--@ Changes path settings. Type parameter can be "TweenInfo", "WalkSpeed", or "JumpPower". Data contains the desired value that the setting will be changed to.
