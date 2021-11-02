@@ -5,4 +5,4 @@ EZ Pathfinding V5 is a module based on the current code of the pro version. This
 This module incorporates OOP and is effective at its job of being a pathfinding wrapper. This module not only makes pathfinding easier to use; it adds extra core functionality that will be useful. This module also is compatible with parts - not only rigs. The code is made in a neat and readable format. I believe this would make a great addition to your game.
 
 # Where can I download this?
-You can find the newest version of this module by going to the releases page.
+You can find the newest version of this module by going to the [](https://github.com/Lifebite/EZ-Pathfinding-V5/releases)
